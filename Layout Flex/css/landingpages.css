@@ -1,0 +1,116 @@
+html,
+body {
+  font-family: sans-serif;
+  padding: 10px;
+  min-height: 100vh;
+  /* Le parent qui a le rôle de "container" prend le displa: flex, ses enfants seront des flex-items */
+  display: flex;
+  /* flex-direction column pour que les enfants se positionnent les uns en-dessous des autres */
+  flex-direction: column;
+}
+
+/* HEADER */
+
+.gabarit {
+  background-color: rgb(77, 90, 206);
+  text-align: center;
+  padding: 30px 0 30px 0;
+  color: white;
+  font-size: 3em;
+  border-radius: 5px;
+  margin-bottom: 0.1em;
+}
+/* MAIN */
+
+.wrapper {
+  /* Pour rappel wrapper est un flex-items de body */
+  /* Réglage FlexBox pour que main s'étende sur la hauteur dispo (100vh) = footer descend en bas de page */
+  /* valeurs par défaut de flex: 0 (grow) 1 (shrink) auto (basis), ici nous ne changeons que le grow */
+  flex: 1 1 auto;
+  /* wrapper qui est "conteneur et parent" se met en display:flex pour agir sur ses enfants en flex-items */
+  /* Par défaut la felex-direction étant raw et le align-items étant stretch, les enfants se positionnent en ligne et comble les espaces verticaux */
+  display: flex;
+}
+
+/* Contenu */
+
+.wrapper__content {
+  /* On repositionne le bloc principal en milieu de page */
+  order: 1;
+  flex: 1;
+  background-color: rgb(195, 77, 206);
+  text-align: center;
+  padding: 30px 0 30px 0;
+  color: white;
+  font-size: 2em;
+  border-radius: 5px;
+  margin: 0 0.09em 0.2em 0.09em;
+}
+
+.wrapper__content-titreh2 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.wrapper__content-paragraphe {
+  font-size: 0.5em;
+  padding: 0 1em 0 1em;
+}
+
+/* Navigation */
+
+.wrapper__navigation {
+  /* En repositionnant l'article principal et l'aside avec la propriété "order", la navigation en order 0 (par défaut) se positionne à gauche */
+  background-color: orange;
+  border-radius: 5px;
+  margin-bottom: 0.3em;
+  flex: 0.2;
+}
+
+.wrapper__navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid white;
+}
+
+/* Aside */
+
+.wrapper__aside {
+  /* On repositionne le bloc aside à gauche de la page */
+  flex: 0.3;
+  order: 2;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 0.3em;
+  padding: 0 1em 0 1em;
+}
+
+.wrapper__aside-titreh2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding-top: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 0 10px 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+  .gabarit,
+  .wrapper,
+  .footer {
+    flex-direction: column;
+    width: auto;
+  }
+}
