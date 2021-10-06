@@ -1,0 +1,40 @@
+@import url(style.css);
+@import url(responsive.css);
+
+body,
+html {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.header {
+  /* Header en display flex pour manipuler l'image et le bloc de navigation / les éléments enfants se positionnent en ligne */
+  display: flex;
+  /* La fenêtre ne peut pas descendre en-dessous de 400px de largeur */
+  min-width: 400px;
+  /* Largeur par défaut = 100% du view port */
+  max-width: 100%;
+  padding: 1em auto 1em auto;
+  background-color: rgba(141, 141, 245, 0.541);
+  border-radius: 5px;
+  box-shadow: 2px 17px 20px -8px rgba(0, 0, 0, 0.38);
+}
+
+.nav {
+    /* le bloc de navigation prend le reste de la width disponible et laisse à header la place dont il dispose à l'origine (flex=0) */
+  flex: 1;
+}
+.header__nav-ul {
+    /* Display flex pour manipuler les 6 menus */
+  display: flex;
+  /* Alignement de parts égales en dehors et entre les intitulés de menu */
+  justify-content: space-evenly;
+  padding: 3.5em;
+}
+
+.header__nav-ul-li a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
