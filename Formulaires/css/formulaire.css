@@ -1,0 +1,79 @@
+@import url(./responsive.css);
+
+body,
+html {
+  font-family: sans-serif;
+  padding: 10px;
+  background-color: linear-gradient(90deg, rgb(204, 136, 0, 1), white);
+}
+
+/* CONTAINER */
+
+.container {
+  display: flex;
+  max-width: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(1, 0, 6, 1) 0%,
+    rgba(129, 129, 139, 1) 50%,
+    rgba(218, 242, 247, 1) 100%
+  );
+  border-radius: 12px;
+  color: white;
+  padding: 0.5em;
+}
+
+/* HEADER */
+
+.header-formulaire {
+  font-size: 2em;
+  margin: 5em 1em;
+}
+
+.header-formulaire__titre--uppercase {
+  text-transform: uppercase;
+}
+
+/* FORMULAIRE */
+
+.main-formulaire {
+  max-width: 100%;
+  padding-left: 2em;
+}
+
+/* inputs */
+
+.main-formulaire__champs-labels,
+.main-formulaire__champs-inputs {
+  margin-bottom: 1em;
+}
+
+input[type="email"] {
+  width: 20em;
+}
+
+input[type="submit"] {
+  width: 53em;
+  min-width: 10em;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 14px 2px 24px 3px rgba(0, 0, 0, 0.41);
+  background-image: linear-gradient(
+    90deg,
+    rgb(90, 89, 92) 0%,
+    rgba(129, 129, 139, 1) 50%,
+    rgba(218, 242, 247, 1) 100%
+  );
+}
+
+textarea {
+  width: 700px !important;
+  height: 150px !important;
+  border: 2px solid rgb(90, 83, 83);
+  border-radius: 10px;
+}

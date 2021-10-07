@@ -1,0 +1,30 @@
+@media screen and (max-width: 1020px) {
+  .container {
+    flex-direction: column;
+  }
+
+  header.header-formulaire {
+    margin: 1em 0 1em 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+.container {
+    min-width: 480px;
+    /* margin: 2em; */
+}
+  header.header-formulaire {
+    margin: 1em 0 1em 1em;
+  }
+
+  textarea {
+    max-width: 400px !important;
+    max-height: 500px !important;
+  }
+
+  input[type="submit"] {
+   
+    max-width: 10em;
+}
+}

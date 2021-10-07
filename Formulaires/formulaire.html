@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/formulaire.css" />
+    <title>Formulaires et Flexbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-formulaire">
+        <h1 class="header-formulaire__titre">Jérôme <span class="header-formulaire__titre--uppercase">Richard</span> - Contact</h1>
+      </header>
+      <main class="main-formulaire">
+        <form class="main-formulaire__champs" method="#" action="#">
+          <div class="main-formulaire__champs-labels">
+            <label for="Nom">Votre nom</label>
+          </div>
+          <div class="main-formulaire__champs-inputs">
+            <input type="text" name="Nom" id="Nom" />
+          </div>
+          <div class="main-formulaire__champs-labels">
+            <label for="email">Votre email</label>
+          </div>
+          <div class="main-formulaire__champs-inputs">
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="main-formulaire__champs-labels">
+            <label for="Message">Quel est votre message ?</label>
+          </div>
+          <div class="main-formulaire__champs-inputs">
+            <textarea name="Message" id="Message">Votre message</textarea>
+          </div>
+          <div class="main-formulaire__champs-inputs">
+            <input type="submit" value="Envoyer" />
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
