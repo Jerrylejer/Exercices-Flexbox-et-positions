@@ -15,20 +15,36 @@ html {
   /* Largeur par défaut = 100% du view port */
   max-width: 100%;
   padding: 1em auto 1em auto;
-  background-color: rgba(141, 141, 245, 0.541);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 0, 6, 1) 0%,
+    rgba(129, 129, 139, 1) 50%,
+    rgba(218, 242, 247, 1) 100%
+  );
   border-radius: 5px;
   box-shadow: 2px 17px 20px -8px rgba(0, 0, 0, 0.38);
 }
 
+.header__titre {
+  padding: 1.5em;
+  border: 1px solid white;
+  height: 50%;
+  margin-top: 0.9em;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
 .nav {
-    /* le bloc de navigation prend le reste de la width disponible et laisse à header la place dont il dispose à l'origine (flex=0) */
+  /* le bloc de navigation prend le reste de la width disponible et laisse à header la place dont il dispose à l'origine (flex=0) */
   flex: 1;
 }
 .header__nav-ul {
-    /* Display flex pour manipuler les 6 menus */
+  /* Display flex pour manipuler les 6 menus */
   display: flex;
   /* Alignement de parts égales en dehors et entre les intitulés de menu */
   justify-content: space-evenly;
+  height: 100%;
   padding: 3.5em;
 }
 

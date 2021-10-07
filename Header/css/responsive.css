@@ -10,17 +10,20 @@
   .header {
     border-radius: 10px;
   }
-
+.header__titre {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
   .header__nav-ul {
-      justify-content: space-evenly;
-      /* padding top ne fonctionne pas */
-      /* padding-top: -2em; */
+    justify-content: space-evenly;
+    /* padding top ne fonctionne pas */
+    /* padding-top: 1em; */
   }
   .header__nav-ul-li {
     width: 100%;
     margin-bottom: 0.5em;
     padding: 1em 0 1em 0;
     border-bottom: 1px solid white;
-    font-size: 0.8em
+    font-size: 0.8em;
   }
 }
